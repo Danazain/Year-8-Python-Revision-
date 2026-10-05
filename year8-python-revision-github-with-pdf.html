@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Year 8 Python Revision</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--paper:#fff;--bg:#f4f7fb;--line:#d9e1ec;--accent:#3157d5;--soft:#eef3ff;--good:#18794e}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:#172033;color:white;padding:30px 18px} header .wrap,main{max-width:980px;margin:auto} h1{margin:0 0 6px;font-size:30px} header p{margin:0;color:#d7def1}
+main{padding:22px 16px 60px}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 8px #0000000a}
+h2{margin-top:0;font-size:21px}.tag{display:inline-block;background:var(--soft);color:var(--accent);padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:8px}
+pre{background:#111827;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto;font-size:14px} textarea,input[type=text]{width:100%;border:1px solid #b9c4d4;border-radius:8px;padding:10px;font:14px Consolas,monospace;margin:6px 0 10px;min-height:42px}textarea{min-height:105px;resize:vertical}
+button,.btn{border:0;border-radius:8px;padding:9px 13px;background:var(--accent);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:4px 5px 4px 0}.secondary{background:#e8edf5;color:#25324a}.hint{display:none;background:#fff8db;border-left:4px solid #e1a900;padding:10px;margin-top:8px}.check{display:none;background:#eaf8f0;border-left:4px solid var(--good);padding:10px;margin-top:8px}.q{border-top:1px solid var(--line);padding-top:16px;margin-top:16px}.q:first-of-type{border-top:0;padding-top:0}.mini{font-size:13px;color:var(--muted)}.checklist label{display:block;margin:7px 0}.progress{height:10px;background:#e5eaf2;border-radius:8px;overflow:hidden}.bar{height:100%;width:0;background:#3157d5}.topline{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px}
+
+.student-info{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.student-info input{font-family:Arial,Helvetica,sans-serif}.submitbox{background:#eefbf4;border:1px solid #b7e3c9}.pdfbtn{background:#18794e}.print-only{display:none}
+@media print{
+  body{background:white;font-size:11pt}.card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}.btn,button,.progress,.mini,.footer{display:none!important}header{background:white;color:#172033;padding:10px 0}header p{color:#333}main{padding:0}.print-only{display:block}textarea,input[type=text]{border:1px solid #777;background:white;color:#000;overflow:visible}textarea{min-height:85px}a{color:#000;text-decoration:none}.student-info{grid-template-columns:1fr 1fr}}
+</style>
+</head><body>
+<header><div class="wrap"><h1>Year 8 Python Revision</h1><p>Introduction to Python & Selection • Coding practice assignment</p></div></header>
+<main>
+<div class="card"><div class="topline"><div><span class="tag">STUDENT INSTRUCTIONS</span><h2>How to complete this revision</h2></div><div><b>Suggested time:</b> 35–45 min</div></div>
+<p>Work through every section. <b>Predict or write your answer before testing code.</b> Use the hints only if you are stuck. For coding tasks, copy your finished code into an online Python compiler to test it.</p>
+<div class="student-info"><input id="studentName" type="text" placeholder="Student name"><input id="studentClass" type="text" placeholder="Class"></div>
+<a class="btn" href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" rel="noopener">Open Python Compiler ↗</a>
+<p class="mini">Your typed answers stay in this browser only; submit your work using the method your teacher gives you.</p><div class="progress"><div class="bar" id="bar"></div></div></div>
+
+<div class="card"><span class="tag">A • DEBUG</span><h2>Fix the Code</h2><p>Rewrite each line so it is valid Python.</p>
+<div class="q"><b>1a.</b><pre>Print("Python!")</pre><input type="text" placeholder="Write the corrected line"><button class="secondary" onclick="toggle(this,'Remember: Python is case-sensitive.')">Hint</button></div>
+<div class="q"><b>1b.</b><pre>print("Hello)</pre><input type="text" placeholder="Write the corrected line"><button class="secondary" onclick="toggle(this,'Text needs matching quotation marks.')">Hint</button></div>
+<div class="q"><b>1c.</b><pre>if score &gt;= 10</pre><input type="text" placeholder="Write the corrected line"><button class="secondary" onclick="toggle(this,'What punctuation ends an if line?')">Hint</button></div>
+<div class="q"><b>1d.</b><pre>if age = 15:</pre><input type="text" placeholder="Write the corrected line"><button class="secondary" onclick="toggle(this,'One = stores a value. Which operator compares two values?')">Hint</button></div>
+</div>
+
+<div class="card"><span class="tag">B • COMPLETE</span><h2>Complete the Code</h2>
+<div class="q"><b>2.</b> Complete a program that asks for a name and welcomes the user.<pre>name = __________("What is your name? ")
+__________(f"Welcome {__________}")</pre><textarea placeholder="Write the completed two lines here"></textarea><button class="secondary" onclick="toggle(this,'You need input(), print(), and the variable name inside { }.')">Hint</button></div>
+<div class="q"><b>3.</b> Complete the condition so that age 13 is included.<pre>age = int(input("Age: "))
+if age ______ 13:
+    print("Teen or older")
+else:
+    print("Under 13")</pre><input type="text" placeholder="Write the missing operator"><button class="secondary" onclick="toggle(this,'The condition means 13 OR MORE.')">Hint</button></div>
+</div>
+
+<div class="card"><span class="tag">C • PREDICT</span><h2>Predict Before You Run</h2>
+<div class="q"><b>4.</b> What is displayed when <code>points = 55</code>?<pre>points = 55
+if points &gt;= 70:
+    print("Gold")
+elif points &gt;= 50:
+    print("Silver")
+else:
+    print("Bronze")</pre><input type="text" placeholder="Your prediction"><button class="secondary" onclick="toggle(this,'Python checks the conditions from top to bottom and stops at the first true one.')">Hint</button></div>
+<div class="q"><b>5.</b> What is displayed when <code>temperature = 20</code>? Then explain what changes if <code>&gt;</code> becomes <code>&gt;=</code>.<pre>temperature = 20
+if temperature &gt; 20:
+    print("Hot")
+else:
+    print("Not Hot")</pre><textarea placeholder="Prediction + explanation"></textarea><button class="secondary" onclick="toggle(this,'Ask: is 20 greater than 20? Then ask: is 20 greater than OR equal to 20?')">Hint</button></div>
+</div>
+
+<div class="card"><span class="tag">D • WRITE</span><h2>Write the Program</h2>
+<div class="q"><b>6.</b> Ask for the user's favourite sport and display <b>You like [sport]</b>.<textarea placeholder="# Write your Python code here"></textarea></div>
+<div class="q"><b>7.</b> Ask for a number. If it is <b>100 or more</b>, display <b>High</b>; otherwise display <b>Low</b>.<textarea placeholder="# Write your Python code here"></textarea><button class="secondary" onclick="toggle(this,'Because the answer is a number, think about int(input(...)). Then use if and else.')">Hint</button></div>
+<div class="q"><b>8.</b> Write a three-choice program: <b>80+ = Excellent</b>, <b>50–79 = Good</b>, <b>below 50 = Keep Practising</b>.<textarea placeholder="# Write your Python code here"></textarea><button class="secondary" onclick="toggle(this,'Check the highest condition first: if 80+, then elif 50+, then else.')">Hint</button></div>
+</div>
+
+<div class="card"><span class="tag">E • CHALLENGE</span><h2>Mini Coding Challenge</h2>
+<div class="q"><b>9.</b> Create a login program. Ask for a password. If it is exactly <code>code123</code>, display <b>Welcome</b>. Otherwise display <b>Try Again</b>.<textarea placeholder="# Write your Python code here"></textarea><button class="secondary" onclick="toggle(this,'A password is text. Compare it using == and put code123 in quotation marks.')">Hint</button></div>
+<div class="q"><b>10.</b> Create your own selection program using <code>input()</code>, <code>if</code>, <code>elif</code> and <code>else</code>. It must have <b>three different possible outputs</b>.<textarea placeholder="# Create your own program here"></textarea></div>
+</div>
+
+<div class="card checklist"><span class="tag">FINAL CHECK</span><h2>Before you submit</h2>
+<label><input type="checkbox" onchange="progress()"> I used lowercase <code>print()</code> and <code>input()</code>.</label>
+<label><input type="checkbox" onchange="progress()"> My text has matching quotation marks.</label>
+<label><input type="checkbox" onchange="progress()"> I used <code>:</code> after <code>if</code>, <code>elif</code> and <code>else</code>.</label>
+<label><input type="checkbox" onchange="progress()"> I indented the code inside selection blocks.</label>
+<label><input type="checkbox" onchange="progress()"> I used <code>==</code> for comparison and <code>=</code> for assignment.</label>
+<label><input type="checkbox" onchange="progress()"> I checked <code>&gt;</code> versus <code>&gt;=</code> carefully.</label>
+<label><input type="checkbox" onchange="progress()"> I used <code>int(input(...))</code> when I needed a number.</label>
+</div>
+
+<div class="card submitbox"><span class="tag">SUBMIT YOUR WORK</span><h2>Finished? Save your answers as a PDF</h2>
+<p>Check that your <b>name and class</b> are entered and that every answer is complete. Then click the button below. In the print window choose <b>Save as PDF</b> (or <b>Microsoft Print to PDF</b>), save the file using your name, and upload that PDF to the assignment your teacher has provided.</p>
+<button class="pdfbtn" onclick="preparePDF()">Save My Answers as PDF</button>
+<p class="mini">Suggested filename: <b>YourName_Year8_Python_Revision.pdf</b>. Your answers are not sent anywhere by this webpage; the PDF stays on your device until you upload it.</p>
+<div class="print-only"><b>Student:</b> <span id="printName"></span> &nbsp;&nbsp;&nbsp; <b>Class:</b> <span id="printClass"></span></div>
+</div>
+<div class="footer">Year 8 Computer Science • Python Revision Assignment</div>
+</main>
+<script>
+function toggle(btn,msg){let x=btn.nextElementSibling;if(!x||!x.classList.contains('hint')){x=document.createElement('div');x.className='hint';x.textContent=msg;btn.insertAdjacentElement('afterend',x)}x.style.display=x.style.display==='block'?'none':'block'}
+function preparePDF(){
+  document.getElementById('printName').textContent=document.getElementById('studentName').value || '________________';
+  document.getElementById('printClass').textContent=document.getElementById('studentClass').value || '________';
+  window.print();
+}
+function progress(){let all=[...document.querySelectorAll('.checklist input')],done=all.filter(x=>x.checked).length;document.getElementById('bar').style.width=(done/all.length*100)+'%'}
+</script>
+</body></html>
